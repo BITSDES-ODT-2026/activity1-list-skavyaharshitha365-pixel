@@ -12,4 +12,21 @@ while True:
         l3.value(i[2])
         l4.value(i[3])
         time.sleep(0.2)
+
+
+#Is this allowed? 👀
+
+from machine import Pin,PWM
+import time
+
+l1,l2,l3,l4= Pin(5,Pin.OUT),Pin(4,Pin.OUT),Pin(13,Pin.OUT),Pin(1,Pin.OUT)
+l=[[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]]
+la=[l1,l2,l3,l4]
+
+
+while True:
+    for i in l:
+        for j in range (4)
+            la[j].value(i[j])
+        time.sleep(0.2)
         
